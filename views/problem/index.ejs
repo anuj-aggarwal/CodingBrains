@@ -55,12 +55,12 @@
                 <% if (user) { %>
                     <!-- Code Submission Container -->
                     <div id="submit-container" class="row">
-                        <form action="/problems/<%= problem._id %>/Submissions" method="POST" class="col-sm-12">
+                        <form id="submit-form" class="col-sm-12">
                             <div class="form-group">
                                 <label for="code-text-area">Submit your code here:</label>
                                 <textarea name="code" id="code-text-area" rows="10" class="form-control"></textarea>
                             </div>
-                            <select class="custom-select col-sm-2">
+                            <select id="language-select" class="custom-select col-sm-2">
                                 <option value="cpp" selected>C++14</option>
                                 <option value="c" disabled>C</option>
                             </select>
@@ -73,6 +73,11 @@
                         <button id="submit-login-btn" class="btn btn-primary">Login to Submit Code!</button>
                     </div>
                 <% } %>
+
+                <!-- Result Container -->
+                <div id="result-container" style="display:none;" class="row">
+                    <!-- Contents to be added by Script -->
+                </div>
             </div>
 
             <!-- Side Container -->

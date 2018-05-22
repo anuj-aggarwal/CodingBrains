@@ -27,16 +27,19 @@
 }
 
 /* Problem Statement Container */
-#statement-container {
-    background-color: #ECF0F1;
+#statement-container, #result-container {
     padding: 20px 30px;
     margin-left: 10px;
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
-    
+    margin-bottom: 20px;
 }
 
-#statement-container h3 {
+#statement-container {
+    background-color: #ECF0F1;
+}
+
+#statement-container h3, #result-container h3 {
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -47,7 +50,7 @@
     padding: 20px 30px;
     margin-left: 10px;
     margin-top: 10px;
-}
+}   
 
 
 /* Side Container */
@@ -66,4 +69,10 @@
 }
 #side-container p:first-of-type {
     margin-top: 10px;
+}
+
+
+/* Background Color for AC Verdict */
+.bg-ac {
+    background-color: lightgreen;
 }
